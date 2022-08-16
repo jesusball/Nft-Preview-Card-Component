@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 310px;
+    height: 520px;
+    border-radius: 10px;
+    position: relative;
+    left: 40%;
+    top: 50px;
+    overflow: hidden;
+}
+
+.container .image-container img{
+    width: 250px;
+    cursor: pointer;
+}
+
+.image-container:hover{
+    opacity: 0.4;
+}
+
+
+.container .content h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.container .content h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content p {
+    color: hsl(215, 51%, 70%);
+    margin-top: 15px;
+}
+
+.content-eth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eth-svg{
+    display: flex;
+    flex-direction: row;
+}
+
+.eth-svg svg{
+    position: relative;
+    top: 15px;
+}
+
+.clock-svg{
+    display: flex;
+    flex-direction: row;
+}
+
+.clock-svg svg{
+    position: relative;
+    top: 15px;
+}
+
+.content-eth {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.content-eth #eth{
+    color: hsl(178, 100%, 50%);
+    padding-left: 8px;
+}
+
+.content-eth #clock{
+    color: hsl(215, 51%, 70%);
+    padding-left: 8px;
+}
+
+.director{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.content-drc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-drc img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.content-drc p {
+    color: hsl(215, 51%, 70%);
+    padding-left: 15px;
+}
+
+.content-drc span {
+    padding-left: 1px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.content-drc span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 520px) {
+    .container{
+        position: static;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+}
